@@ -1,0 +1,28 @@
+INSRXN_towns =		[
+						["Firuz Baharv", [5082.53,1911.59,0], 500],
+						["East Shabaz", [4053,2081,0], 500],
+						["Shahbaz", [3528.13,1932.83,0], 500],
+						["Berthas", [3091.86,2752.96,0], 500],
+						["Military Camp", [3954.59,2776.17,0], 500],
+						["Ab-e Shur Dam", [2889.65,3143.63,0.00165677], 500],
+						["Yarum", [4154.24,3592.65,0], 500],
+						["South-East Zargabad", [4670,3860,0], 500],
+						["Zargabad", [4073.2,4139.85,0], 500],
+						["Villa", [4773.98,4436.08,0], 500],
+						["Airport", [3556.46,4092.85,0], 500],
+						["Azizayt", [1929.89,4652.94,0], 500],
+						["North-West Zargabad", [3489,4809,0], 500],
+						["North Zargabad", [4143,4872,0], 500],
+						["Nango", [2857.68,5026.7,0.00149536], 500],
+						["South Hazar Bagh", [4040,5455,0], 500],
+						["Hazar Bagh", [3943.51,5957.63,0], 500]						     
+					];
+{
+	_m = createMarker [_x select 0, _x select 1];
+	//_m setMarkerType "Dot";
+	_m setMarkerBrush "solid";
+    _m setMarkerShape "Ellipse";
+    _m setMarkerColor "ColorRed";
+	_m setMarkerText (_x select 0);
+	_m setMarkerSize [_x select 2, _x select 2]; // 1
+} forEach INSRXN_towns;
